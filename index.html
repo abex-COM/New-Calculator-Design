@@ -11,41 +11,41 @@
 <body>
 <div class="container">
         <div class="screen">
-            <div class="result">0</div>
+            <div class="display"></div>
             <div class="inputs"><input type="text"></div>
         </div>
         <hr>
         <div class="buttons"> 
             <div class="item item1">
             <button class="clear">C</button>
-            <button class="clear">AC</button>
+            <button class="allClear">AC</button>
             <button onclick="calculate('%')">%</button>
             <button onclick="calculate('/')">÷</button>
         </div>
         <div class="item item2"> 
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>×</button>
+            <button onclick="calculate('7')">7</button>
+            <button onclick="calculate('8')">8</button>
+            <button onclick="calculate('9')">9</button>
+            <button onclick="calculate('*')">×</button>
         </div>
 
         <div class="item item3"> 
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>-</button>
+            <button onclick="calculate('4')">4</button>
+            <button onclick="calculate('5')">5</button>
+            <button onclick="calculate('6')">6</button>
+            <button onclick="calculate('-')">-</button>
         </div>
         <div class="item item4"> 
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>+</button>
+            <button onclick="calculate('1')">1</button>
+            <button onclick="calculate('2')">2</button>
+            <button onclick="calculate('3')">3</button>
+            <button onclick="calculate('+')">+</button>
         </div>
         <div class="item item5"> 
-            <button>00</button>
-            <button>0</button>
-            <button>.</button>
-            <button>=</button>
+            <button onclick="calculate('00')">00</button>
+            <button onclick="calculate('0')">0</button>
+            <button onclick="calculate('.')">.</button>
+            <button class="results">=</button>
         </div>
            
         </div>
