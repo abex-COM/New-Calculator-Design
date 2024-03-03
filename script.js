@@ -6,7 +6,7 @@ const display = document.querySelector(".display");
 
 
 result.addEventListener(("click"), () => {
-    display.textContent = eval(input.value);
+    display.textContent = parseFloat(eval(input.value)).toFixed(10);
 
 })
 clear.addEventListener(("click"), () => {
