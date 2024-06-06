@@ -1,55 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Kondala Calculator</title>
-<link rel="stylesheet" href="./styles.css">
-<script src="./script.js" defer></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kondala Calculator</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="screen">
+        <div class="display"></div>
+        <div class="inputs" id="myinput"><input type="text" /></div>
+      </div>
+      <hr />
+      <div class="buttons">
+        <div class="item item1">
+          <button class="clear">C</button>
+          <button class="allClear">AC</button>
+          <button onclick="calculate('%')">%</button>
 
-</head>
-<body>
-<div class="container">
-    
-        <div class="screen">
-            <div class="display"></div>
-            <div class="inputs" id="myinput"><input type="text"></div>
+          <button onclick="calculate('/')">÷</button>
         </div>
-        <hr>
-        <div class="buttons"> 
-            <div class="item item1">
-            <button class="clear">C</button>
-            <button class="allClear">AC</button>
-            <button onclick="calculate('%')">%</button>
-            <button onclick="calculate('/')">÷</button>
-        </div>
-        <div class="item item2"> 
-            <button onclick="calculate('7')">7</button>
-            <button onclick="calculate('8')">8</button>
-            <button onclick="calculate('9')">9</button>
-            <button onclick="calculate('*')">×</button>
+        <div class="item item2">
+          <button onclick="calculate('7')">7</button>
+          <button onclick="calculate('8')">8</button>
+          <button onclick="calculate('9')">9</button>
+          <button onclick="calculate('*')">×</button>
         </div>
 
-        <div class="item item3"> 
-            <button onclick="calculate('4')">4</button>
-            <button onclick="calculate('5')">5</button>
-            <button onclick="calculate('6')">6</button>
-            <button onclick="calculate('-')">-</button>
+        <div class="item item3">
+          <button onclick="calculate('4')">4</button>
+          <button onclick="calculate('5')">5</button>
+          <button onclick="calculate('6')">6</button>
+          <button onclick="calculate('-')">-</button>
         </div>
-        <div class="item item4"> 
-            <button onclick="calculate('1')">1</button>
-            <button onclick="calculate('2')">2</button>
-            <button onclick="calculate('3')">3</button>
-            <button onclick="calculate('+')">+</button>
+        <div class="item item4">
+          <button onclick="calculate('1')">1</button>
+          <button onclick="calculate('2')">2</button>
+          <button onclick="calculate('3')">3</button>
+          <button onclick="calculate('+')">+</button>
         </div>
-        <div class="item item5"> 
-            <button onclick="calculate('00')">00</button>
-            <button onclick="calculate('0')">0</button>
-            <button onclick="calculate('.')">.</button>
-            <button class="results">=</button>
+        <div class="item item5">
+          <button onclick="calculate('00')">00</button>
+          <button onclick="calculate('0')">0</button>
+          <button onclick="calculate('.')">.</button>
+          <button class="results">=</button>
         </div>
-           
-        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
